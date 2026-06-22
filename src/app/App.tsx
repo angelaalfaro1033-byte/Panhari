@@ -18,8 +18,26 @@ import {
   Lightbulb,
   TrendingUp,
   Building2,
+  Youtube,
 } from "lucide-react";
 import logoPanhari from "../assets/logo-panhari.png";
+import adepan from "../assets/adepan.png";
+import alcaldiaIbague from "../assets/AlcaldiaIbague.png";
+import bonanza from "../assets/bonanza.png";
+import brahman from "../assets/brahman.png";
+import france from "../assets/France.png";
+import gobernacionTolima from "../assets/GobernacionTolima.png";
+import jacobo from "../assets/jacobo.png";
+import lesaffre from "../assets/lesaffre.png";
+import levapan from "../assets/levapan.png";
+import luker from "../assets/Luker.png";
+import pastelos from "../assets/pastelos.png";
+import richs from "../assets/richs.png";
+import santillana from "../assets/santillana.png";
+import secretos from "../assets/secretos.png";
+import sigra from "../assets/sigra.png";
+import hero from "../assets/hero.png";
+import gallery from "@/assets/subhero.jpeg";
 /* ── Brand Tokens ───────────────────────────────────────── */
 const C = {
   ocre: "#D48328",
@@ -34,12 +52,12 @@ const C = {
 };
 
 const IMGS = {
-  hero: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&h=900&fit=crop&auto=format",
+  hero,
   lobby: "https://images.unsplash.com/photo-1560439514-4e9645039924?w=1200&h=800&fit=crop&auto=format",
   networking: "https://images.unsplash.com/photo-1675716921224-e087a0cca69a?w=1200&h=800&fit=crop&auto=format",
   handshake: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=800&fit=crop&auto=format",
   exhibition: "https://images.unsplash.com/photo-1718099066109-81964e5df51f?w=1200&h=800&fit=crop&auto=format",
-  gallery: "https://images.unsplash.com/photo-1774021795769-375b0a521d90?w=1200&h=800&fit=crop&auto=format",
+  gallery ,
   conf: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=800&fit=crop&auto=format",
 };
 
@@ -186,11 +204,12 @@ function Hero() {
         {/* Left */}
         <motion.div initial={{ opacity: 0, x: -36 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.85, ease: "easeOut" }}>
           <h1 style={{ color: C.blanco, fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "clamp(2.2rem, 4.8vw, 3.9rem)", lineHeight: 1.1, marginBottom: 22, letterSpacing: "-0.015em" }}>
-            Conecta tu empresa<br />con nuevas{" "}
-            <span style={{ background: `linear-gradient(90deg, ${C.naranja}, ${C.ocre})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>oportunidades</span>{" "}
+            Impulsa el futuro<br />de tu empresa{" "}
+            <span style={{ background: `linear-gradient(90deg, ${C.naranja}, ${C.ocre})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>en el sector panificador</span>{" "}
           </h1>
           <p style={{ color: "rgba(231,225,207,0.78)", fontFamily: "'Poppins',sans-serif", fontWeight: 400, fontSize: "clamp(0.95rem, 1.6vw, 1.15rem)", lineHeight: 1.75, maxWidth: 500, marginBottom: 40 }}>
-Lorem ipsum dolor sit amet consectetur adipiscing elit mollis, hac mattis nunc dui hendrerit vestibulum pharetra          </p>
+Impulsa tu negocio conectándote con aliados, proveedores y oportunidades reales de crecimiento en la región.  
+          </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14 }}>
             <a href="#inscribir" className="btn-glow" style={{ background: `linear-gradient(130deg, ${C.naranja}, ${C.ocre})`, color: "#fff", padding: "14px 34px", borderRadius: 8, textDecoration: "none", fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "0.93rem", display: "inline-flex", alignItems: "center", gap: 9, boxShadow: `0 8px 30px rgba(247,138,29,0.38)`, transition: "transform 0.2s" }}
               onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
@@ -304,11 +323,10 @@ function Carousel() {
 
 /* ── Stats ──────────────────────────────────────────────── */
 const stats = [
-  { val: "+25", lbl: "Empresas" },
-  { val: "+80", lbl: "Empresas" },
-  { val: "+15", lbl: "Ciudades" },
-  { val: "20K+", lbl: "Visitantes" },
-  { val: "+30", lbl: "Ruedas de Negocio" },
+  { val: "35+", lbl: "Marcas Participantes" },
+  { val: "$66M", lbl: "Ventas Reportadas" },
+  { val: "1.200+", lbl: "Asistentes por Día" },
+ { val: "100%", lbl: "Enfoque Sectorial" },
 ];
 
 function Stats() {
@@ -360,10 +378,9 @@ function WhatIsPanhari() {
           <h2 style={{ color: C.cafeMuyOscuro, fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "clamp(1.9rem, 3.8vw, 2.9rem)", lineHeight: 1.15, marginBottom: 24 }}>¿Qué es<br /><span style={{ color: C.cafe }}>Panhari?</span></h2>
           <div style={{ width: 52, height: 3, background: `linear-gradient(90deg, ${C.naranja}, ${C.ocre})`, borderRadius: 2, marginBottom: 24 }} />
           <p style={{ color: "#4A2800", fontFamily: "'Poppins',sans-serif", fontSize: "0.97rem", lineHeight: 1.82, marginBottom: 18 }}>
-           Lorem ipsum dolor sit amet consectetur adipiscing elit mollis, hac mattis nunc dui hendrerit vestibulum pharetra. Euismod aliquet quis purus quam pulvinar nisl sodales, potenti felis parturient viverra hendrerit natoque blandit tincidunt, lobortis fusce magnis ante ut tempus. Duis sapien lacinia per ridiculus sagittis facilisi feugiat, nec leo rutrum nascetur lobortis nullam natoque placerat, cras nostra primis ac mattis orci.
-          </p>
+PANHARI es la feria de panadería, repostería y amasijos del centro-oriente de Colombia, organizada por la Cámara de Comercio de Ibagué. Reúne empresarios, proveedores, panaderías, pastelerías, academia y sector HORECA, promoviendo el comercio, la innovación, la formación y el fortalecimiento de toda la cadena productiva del sector panificador.          </p>
           <p style={{ color: "#6A3C00", fontFamily: "'Poppins',sans-serif", fontSize: "0.97rem", lineHeight: 1.82, marginBottom: 34 }}>
-           Lorem ipsum dolor sit amet consectetur adipiscing elit mollis, hac mattis nunc dui hendrerit vestibulum pharetra. Euismod aliquet quis purus quam pulvinar nisl sodales, potenti felis parturient viverra hendrerit natoque blandit tincidunt, lobortis fusce magnis ante ut tempus
+          Incluye espacios académicos, talleres prácticos, concursos y exhibición comercial, impulsando la innovación, el networking y el crecimiento empresarial del sector.
           </p>
           <a href="#inscribir" className="btn-glow" style={{ background: `linear-gradient(130deg, ${C.naranja}, ${C.ocre})`, color: "#fff", padding: "13px 32px", borderRadius: 8, textDecoration: "none", fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "0.93rem", display: "inline-flex", alignItems: "center", gap: 9, boxShadow: `0 8px 26px rgba(247,138,29,0.34)`, transition: "transform 0.2s" }}
             onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
@@ -376,11 +393,31 @@ function WhatIsPanhari() {
   );
 }
 const objetivos = [
-  { icon: Building2, title: "Fortalecer el sector empresarial", text: "Crear un espacio donde las empresas crezcan, se consoliden y accedan a nuevos mercados con respaldo institucional." },
-  { icon: TrendingUp, title: "Generar oportunidades de negocio", text: "Facilitar contactos comerciales directos entre proveedores, compradores e inversores en ruedas de negocio estructuradas." },
-  { icon: Handshake, title: "Impulsar alianzas estratégicas", text: "Promover acuerdos de cooperación entre empresas nacionales e internacionales que generen valor económico compartido." },
-  { icon: Lightbulb, title: "Promover la innovación", text: "Visibilizar proyectos disruptivos y tecnologías emergentes que transformen los modelos de negocio tradicionales." },
-  { icon: Globe, title: "Incentivar la inversión regional", text: "Posicionar la región como destino atractivo para la inversión nacional e internacional mediante la vitrina que ofrece Panhari." },
+  {
+    icon: Building2,
+    title: "Fortalecer la industria panificadora",
+    text: "Promover el crecimiento sostenible de panaderías, pastelerías, amasijos y negocios afines mediante formación, innovación y articulación empresarial."
+  },
+  {
+    icon: TrendingUp,
+    title: "Generar oportunidades de negocio",
+    text: "Facilitar conexiones comerciales entre expositores, compradores, proveedores y aliados estratégicos para impulsar nuevas oportunidades de mercado."
+  },
+  {
+    icon: Lightbulb,
+    title: "Impulsar la innovación del sector",
+    text: "Acercar a los empresarios a las últimas tendencias, técnicas, productos y tecnologías que transforman la industria panificadora."
+  },
+  {
+    icon: Handshake,
+    title: "Conectar empresas y aliados",
+    text: "Fortalecer el relacionamiento empresarial mediante espacios de networking, cooperación y encadenamiento productivo."
+  },
+  {
+    icon: Globe,
+    title: "Proyectar el desarrollo regional",
+    text: "Consolidar a Ibagué y al Tolima como referentes del sector panificador y como escenarios estratégicos para los negocios y eventos especializados."
+  },
 ];
 /* ── Objetivos — Network Graph ──────────────────────────── */
 function Objetivos() {
@@ -654,96 +691,172 @@ function Ubicacion() {
 
 /* ── Infinite Auto-Scroll Aliadas Carousel ──────────────── */
 const aliadas = [
-  { name: "Nestlé", color: "#CC0000" },
-  { name: "Alpina", color: "#007DC5" },
-  { name: "Colombina", color: "#E32119" },
-  { name: "Grupo Nutresa", color: "#0057A8" },
-  { name: "Bimbo", color: "#E41B17" },
-  { name: "Ramo", color: "#F4A800" },
-  { name: "Coca‑Cola", color: "#F40009" },
-  { name: "PepsiCo", color: "#004B93" },
-  { name: "Levapan", color: "#1A5276" },
-  { name: "Puratos", color: "#003DA5" },
-  { name: "Bancolombia", color: "#FFCB08" },
-  { name: "Davivienda", color: "#CE1226" },
-  { name: "BBVA", color: "#004481" },
-  { name: "SENA", color: "#006BB6" },
-  { name: "Cámara de Comercio", color: "#1E8449" },
+  { logo: adepan },
+  { logo: alcaldiaIbague },
+  { logo: bonanza },
+  { logo: brahman },
+  { logo: france },
+  { logo: gobernacionTolima },
+  { logo: jacobo },
+  { logo: lesaffre },
+  { logo: levapan },
+  { logo: luker },
+  { logo: pastelos },
+  { logo: richs },
+  { logo: santillana },
+  { logo: secretos },
+  { logo: sigra },
 ];
 
-function AlianaCard({ a }: { a: typeof aliadas[0] }) {
-  const [hovered, setHovered] = useState(false);
+function AliadaCard({ a }: { a: { logo: string } }) {
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
       style={{
         flexShrink: 0,
-        width: 180,
-        height: 90,
-        borderRadius: 12,
-        background: hovered ? `${a.color}15` : "rgba(248,248,248,0.04)",
-        border: `1.5px solid ${hovered ? a.color + "60" : "rgba(212,131,40,0.12)"}`,
+        width: 260,
+        height: 160,
+        borderRadius: 16,
+        background: "#fff",
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 6,
-        cursor: "pointer",
-        transition: "all 0.28s",
-        transform: hovered ? "scale(1.06) translateY(-2px)" : "scale(1)",
-        boxShadow: hovered ? `0 10px 30px ${a.color}28` : "none",
-        marginRight: 18,
+        padding: 10,
+        marginRight: 20,
+        boxShadow: "0 8px 30px rgba(0,0,0,0.08)",
       }}
     >
-      {/* Color circle as logo proxy */}
-      <div style={{
-        width: 36, height: 36, borderRadius: "50%",
-        background: hovered ? a.color : "rgba(255,255,255,0.12)",
-        display: "flex", alignItems: "center", justifyContent: "center",
-        transition: "all 0.28s",
-        boxShadow: hovered ? `0 4px 12px ${a.color}40` : "none",
-      }}>
-        <span style={{ color: hovered ? "#fff" : "rgba(255,255,255,0.4)", fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "0.7rem", letterSpacing: "0.04em" }}>
-          {a.name.slice(0, 2).toUpperCase()}
-        </span>
-      </div>
-      <span style={{
-        fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "0.72rem",
-        letterSpacing: "0.06em",
-        color: hovered ? a.color : "rgba(248,248,248,0.28)",
-        transition: "color 0.28s",
-        textAlign: "center",
-        maxWidth: 140,
-        lineHeight: 1.3,
-      }}>{a.name}</span>
+      <img
+        src={a.logo}
+        alt="Logo empresa"
+        style={{
+          maxWidth: "90%",
+          maxHeight: "90%",
+          objectFit: "contain",
+        }}
+      />
     </div>
   );
 }
 
 function Aliadas() {
   const doubled = [...aliadas, ...aliadas];
+
   return (
-    <section style={{ background: C.cafeMuyOscuro, padding: "90px 0", position: "relative", overflow: "hidden" }}>
-      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, transparent, ${C.ocre}, transparent)` }} />
-      <div style={{ maxWidth: 1380, margin: "0 auto", padding: "0 clamp(1.25rem, 4vw, 3.5rem)", marginBottom: 48, textAlign: "center" }}>
-        <div style={{ color: C.naranja, fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "0.72rem", letterSpacing: "0.2em", marginBottom: 10 }}>CONFIANZA EMPRESARIAL</div>
-        <h2 style={{ color: C.blanco, fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "clamp(1.5rem, 2.8vw, 2.1rem)", marginBottom: 8 }}>Empresas que ya confían en Panhari</h2>
-        <p style={{ color: "rgba(231,225,207,0.55)", fontFamily: "'Poppins',sans-serif", fontSize: "0.9rem", maxWidth: 520, margin: "0 auto" }}>Organizaciones que impulsan el crecimiento y fortalecimiento del sector.</p>
+    <section
+      style={{
+        background: C.cafeMuyOscuro,
+        padding: "90px 0",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 2,
+          background: `linear-gradient(90deg, transparent, ${C.ocre}, transparent)`,
+        }}
+      />
+
+      <div
+        style={{
+          maxWidth: 1380,
+          margin: "0 auto",
+          padding: "0 clamp(1.25rem, 4vw, 3.5rem)",
+          marginBottom: 48,
+          textAlign: "center",
+        }}
+      >
+        <div
+          style={{
+            color: C.naranja,
+            fontFamily: "'Poppins',sans-serif",
+            fontWeight: 600,
+            fontSize: "0.72rem",
+            letterSpacing: "0.2em",
+            marginBottom: 10,
+          }}
+        >
+          CONFIANZA EMPRESARIAL
+        </div>
+
+        <h2
+          style={{
+            color: C.blanco,
+            fontFamily: "'Poppins',sans-serif",
+            fontWeight: 700,
+            fontSize: "clamp(1.5rem, 2.8vw, 2.1rem)",
+            marginBottom: 8,
+          }}
+        >
+          Empresas que ya confían en Panhari
+        </h2>
+
+        <p
+          style={{
+            color: "rgba(231,225,207,0.55)",
+            fontFamily: "'Poppins',sans-serif",
+            fontSize: "0.9rem",
+            maxWidth: 520,
+            margin: "0 auto",
+          }}
+        >
+          Organizaciones que impulsan el crecimiento y fortalecimiento del sector.
+        </p>
       </div>
 
-      {/* Infinite scroll strip */}
       <div style={{ position: "relative", overflow: "hidden" }}>
-        {/* Fade edges */}
-        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 120, background: `linear-gradient(90deg, ${C.cafeMuyOscuro}, transparent)`, zIndex: 2, pointerEvents: "none" }} />
-        <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 120, background: `linear-gradient(-90deg, ${C.cafeMuyOscuro}, transparent)`, zIndex: 2, pointerEvents: "none" }} />
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            bottom: 0,
+            width: 120,
+            background: `linear-gradient(90deg, ${C.cafeMuyOscuro}, transparent)`,
+            zIndex: 2,
+          }}
+        />
 
-        <div style={{ display: "flex", animation: "scrollLeft 36s linear infinite", width: "max-content", padding: "8px 0 18px" }}>
-          {doubled.map((a, i) => <AlianaCard key={i} a={a} />)}
+        <div
+          style={{
+            position: "absolute",
+            right: 0,
+            top: 0,
+            bottom: 0,
+            width: 120,
+            background: `linear-gradient(-90deg, ${C.cafeMuyOscuro}, transparent)`,
+            zIndex: 2,
+          }}
+        />
+
+        <div
+          style={{
+            display: "flex",
+            animation: "scrollLeft 36s linear infinite",
+            width: "max-content",
+            padding: "10px 0 20px",
+          }}
+        >
+          {doubled.map((a, i) => (
+            <AliadaCard key={i} a={a} />
+          ))}
         </div>
       </div>
 
-      <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg, transparent, ${C.ocre}, transparent)` }} />
+      <div
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: 2,
+          background: `linear-gradient(90deg, transparent, ${C.ocre}, transparent)`,
+        }}
+      />
     </section>
   );
 }
@@ -751,34 +864,123 @@ function Aliadas() {
 /* ── CTA Final ──────────────────────────────────────────── */
 function CTAFinal() {
   return (
-    <section id="inscribir" style={{ position: "relative", overflow: "hidden", padding: "140px clamp(1.25rem, 4vw, 3.5rem)" }}>
-      <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse 80% 60% at 18% 50%, ${C.cafe} 0%, transparent 58%), radial-gradient(ellipse 60% 80% at 80% 28%, ${C.ocre} 0%, transparent 52%), radial-gradient(ellipse 50% 70% at 60% 82%, ${C.naranja} 0%, transparent 48%), ${C.cafeMuyOscuro}` }} />
-      <div style={{ position: "absolute", top: -90, right: -90, width: 360, height: 360, borderRadius: "50%", background: C.rojo, opacity: 0.055, filter: "blur(60px)", pointerEvents: "none" }} />
-      <svg style={{ position: "absolute", inset: 0, width: "100%", height: "100%", opacity: 0.038, pointerEvents: "none" }} viewBox="0 0 1400 600" preserveAspectRatio="none">
-        <polygon points="0,0 180,600 0,600" fill={C.naranja} />
-        <polygon points="1400,0 1220,600 1400,600" fill={C.naranja} />
-        <polygon points="700,0 880,600 520,600" fill={C.ocre} />
-      </svg>
-      <div style={{ position: "relative", zIndex: 1, maxWidth: 760, margin: "0 auto", textAlign: "center" }}>
-        <motion.div initial={{ opacity: 0, y: 26 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.68 }}>
-          <div style={{ color: C.naranja, fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "0.72rem", letterSpacing: "0.2em", marginBottom: 22 }}>¡ES TU MOMENTO!</div>
-          <h2 style={{ color: C.blanco, fontFamily: "'Poppins',sans-serif", fontWeight: 800, fontSize: "clamp(2rem, 4.8vw, 3.8rem)", lineHeight: 1.1, letterSpacing: "-0.01em", marginBottom: 22 }}>
+    <section
+      id="inscribir"
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        padding: "120px clamp(1.25rem, 4vw, 3.5rem)",
+        background: C.cafeMuyOscuro,
+      }}
+    >
+      {/* Fondo MUCHO más suave */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: `
+            radial-gradient(circle at 20% 40%, ${C.cafe} 0%, transparent 75%),
+            radial-gradient(circle at 80% 30%, ${C.ocre} 0%, transparent 78%),
+            radial-gradient(circle at 60% 85%, ${C.naranja} 0%, transparent 80%)
+          `,
+          opacity: 0.35,
+        }}
+      />
+
+      {/* Glow decorativo MUY sutil */}
+      <div
+        style={{
+          position: "absolute",
+          top: -120,
+          right: -120,
+          width: 420,
+          height: 420,
+          borderRadius: "50%",
+          background: C.rojo,
+          opacity: 0.015,
+          filter: "blur(120px)",
+          pointerEvents: "none",
+        }}
+      />
+
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          maxWidth: 760,
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div
+            style={{
+              color: C.naranja,
+              fontFamily: "'Poppins',sans-serif",
+              fontWeight: 600,
+              fontSize: "0.72rem",
+              letterSpacing: "0.18em",
+              marginBottom: 18,
+            }}
+          >
+            ¡ES TU MOMENTO!
+          </div>
+
+          <h2
+            style={{
+              color: C.blanco,
+              fontFamily: "'Poppins',sans-serif",
+              fontWeight: 800,
+              fontSize: "clamp(2rem, 4.5vw, 3.6rem)",
+              lineHeight: 1.1,
+              marginBottom: 20,
+            }}
+          >
             Tu espacio en la feria<br />
-            <span style={{ background: `linear-gradient(90deg, ${C.naranja}, ${C.ocre})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>te está esperando</span>
+            <span
+              style={{
+                background: `linear-gradient(90deg, ${C.naranja}, ${C.ocre})`,
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              te está esperando
+            </span>
           </h2>
-          <p style={{ color: "rgba(231,225,207,0.73)", fontFamily: "'Poppins',sans-serif", fontSize: "clamp(0.97rem, 1.7vw, 1.12rem)", lineHeight: 1.72, maxWidth: 540, margin: "0 auto 44px" }}>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit mollis, hac mattis nunc dui hendrerit vestibulum pharetrafoo
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 18 }}>
-            <a href="#contacto" className="btn-glow" style={{ background: `linear-gradient(130deg, ${C.naranja}, ${C.rojo})`, color: "#fff", padding: "17px 50px", borderRadius: 8, textDecoration: "none", fontFamily: "'Poppins',sans-serif", fontWeight: 700, fontSize: "1rem", boxShadow: `0 12px 38px rgba(255,23,48,0.33)`, display: "inline-flex", alignItems: "center", gap: 11, transition: "transform 0.2s, box-shadow 0.2s" }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; (e.currentTarget as HTMLElement).style.boxShadow = `0 16px 48px rgba(255,23,48,0.48)`; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = ""; (e.currentTarget as HTMLElement).style.boxShadow = `0 12px 38px rgba(255,23,48,0.33)`; }}>
-              Inscribir Mi Empresa <ArrowRight size={19} />
-            </a>
-            <a href="#contacto" style={{ background: "rgba(248,248,248,0.07)", border: "1px solid rgba(248,248,248,0.18)", color: C.blanco, padding: "17px 42px", borderRadius: 8, textDecoration: "none", fontFamily: "'Poppins',sans-serif", fontWeight: 600, fontSize: "0.97rem", backdropFilter: "blur(8px)", transition: "background 0.2s" }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(248,248,248,0.11)"; }}
-              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(248,248,248,0.07)"; }}>
-              Más información
+
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <a
+              href="#contacto"
+              style={{
+                background: C.naranja,
+                color: "#fff",
+                padding: "16px 46px",
+                borderRadius: 10,
+                textDecoration: "none",
+                fontFamily: "'Poppins',sans-serif",
+                fontWeight: 700,
+                fontSize: "1rem",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.25)",
+                transition: "all 0.25s ease",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 10,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = "0 14px 40px rgba(0,0,0,0.35)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "0 10px 30px rgba(0,0,0,0.25)";
+              }}
+            >
+              Inscribirse<ArrowRight size={18} />
             </a>
           </div>
         </motion.div>
@@ -790,10 +992,10 @@ function CTAFinal() {
 /* ── Footer — Minimal Centered ──────────────────────────── */
 function Footer() {
   const socials = [
-    { Icon: Instagram, href: "#", label: "Instagram" },
-    { Icon: Facebook, href: "#", label: "Facebook" },
-    { Icon: Linkedin, href: "#", label: "LinkedIn" },
-    { Icon: Twitter, href: "#", label: "Twitter" },
+    { Icon: Instagram, href: "https://www.instagram.com/camaracomercioibague/", label: "Instagram" },
+    { Icon: Facebook, href: "https://www.facebook.com/ccdeibague", label: "Facebook" },
+    { Icon: Youtube, href: "https://www.youtube.com/channel/UCkg1iwyqO8zMmQ9J3IGCtCQ", label: "LinkedIn" },
+    { Icon: X, href: "https://x.com/ccdeibague", label: "Twitter" },
   ];
 
   return (
